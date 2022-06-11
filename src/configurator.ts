@@ -7,6 +7,7 @@ export interface IConfigInterface {
   ignore?: string;
   error?: string;
   skip?: string;
+  format?: boolean;
 }
 
 const defaultConfig: IConfigInterface = {
@@ -14,6 +15,7 @@ const defaultConfig: IConfigInterface = {
   ignore: undefined,
   error: undefined,
   skip: undefined,
+  format: true
 }
 
 const onlyKnownConfigOptions = pick(Object.keys(defaultConfig));
